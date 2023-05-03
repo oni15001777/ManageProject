@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kxu-VE-mE0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ManageProject-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="LoginVC" storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="Main_LoginViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hVF-5k-Fft" userLabel="Main Stack View">
+                                <rect key="frame" x="15" y="204.99999999999997" width="363" height="339.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Kbu-q0-R1j" userLabel="Text Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="162"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BIZ-7Z-3yS">
+                                                <rect key="frame" x="0.0" y="0.0" width="363" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-Kx-Asi">
+                                                <rect key="frame" x="0.0" y="70" width="363" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your details to login." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPK-wc-pjR">
+                                                <rect key="frame" x="0.0" y="138" width="363" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZjE-iP-tJp" userLabel="Button Stack View">
+                                        <rect key="frame" x="0.0" y="212.00000000000003" width="363" height="127.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9i-f3-Npq">
+                                                <rect key="frame" x="0.0" y="0.0" width="363" height="48.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="897-QB-oPy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-Bp-GtS">
+                                                <rect key="frame" x="0.0" y="78.666666666666686" width="363" height="48.666666666666657"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Register">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Srv-Vc-wb1" kind="show" id="uMY-66-Yj8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hVF-5k-Fft" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="CbK-Fw-wDp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hVF-5k-Fft" secondAttribute="trailing" constant="15" id="Vkc-dQ-QJx"/>
+                            <constraint firstItem="hVF-5k-Fft" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dv4-s1-nZE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ManageProject" id="Y3I-RA-DfC"/>
+                    <connections>
+                        <outlet property="notification" destination="JPK-wc-pjR" id="V9W-gG-0ve"/>
+                        <outlet property="password" destination="iHT-Kx-Asi" id="bJl-mi-fNZ"/>
+                        <outlet property="username" destination="BIZ-7Z-3yS" id="wBa-nz-b8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="qUn-Le-EDb">
+            <objects>
+                <viewController storyboardIdentifier="UserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A2i-Ob-Wnw" customClass="MenuViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46w-fa-FfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-NS-Mzt">
+                                <rect key="frame" x="8" y="205" width="377" height="142"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-8h-MGn">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Project  📄">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="UD2-Jx-ber" kind="show" id="wDE-iy-LUp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSH-St-Fod">
+                                        <rect key="frame" x="0.0" y="86" width="377" height="56"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See projects 📑">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="NCW-Et-ClY" kind="show" id="0Kn-7n-tkt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Odd-jW-7Au"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yfj-NS-Mzt" firstAttribute="top" secondItem="Odd-jW-7Au" secondAttribute="top" constant="50" id="7xS-nc-eOR"/>
+                            <constraint firstItem="Yfj-NS-Mzt" firstAttribute="leading" secondItem="Odd-jW-7Au" secondAttribute="leading" constant="8" id="GUj-N6-3NS"/>
+                            <constraint firstItem="Odd-jW-7Au" firstAttribute="trailing" secondItem="Yfj-NS-Mzt" secondAttribute="trailing" constant="8" id="INU-cK-XZC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="hxf-iK-EQW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gyz-AE-h1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2843.5114503816794" y="3.5211267605633805"/>
+        </scene>
+        <!--Add Project-->
+        <scene sceneID="JfE-Ro-Coq">
+            <objects>
+                <viewController id="UD2-Jx-ber" customClass="AddNewProjectViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9KZ-iG-sZA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-Oh-9GI">
+                                <rect key="frame" x="8" y="205" width="377" height="536.66666666666663"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeB-ZF-Gav">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amN-w4-cmE">
+                                        <rect key="frame" x="0.0" y="70" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnz-wl-pvm">
+                                        <rect key="frame" x="0.0" y="140" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-22-gya" userLabel="Start Date Picker">
+                                        <rect key="frame" x="0.0" y="194" width="377" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xs-Jt-bb1">
+                                        <rect key="frame" x="0.0" y="274" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xEe-Yk-1OE" userLabel="End Date Picker">
+                                        <rect key="frame" x="0.0" y="328" width="377" height="50"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crL-mf-Fyk">
+                                        <rect key="frame" x="0.0" y="408" width="377" height="48.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create Project">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addProjectButtonPressed:" destination="UD2-Jx-ber" eventType="touchUpInside" id="W9V-e0-ydy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcT-ED-Xya">
+                                        <rect key="frame" x="0.0" y="486.66666666666663" width="377" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bTt-rX-uPL"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bTt-rX-uPL" firstAttribute="trailing" secondItem="xhp-Oh-9GI" secondAttribute="trailing" constant="8" id="0D3-Gv-7Mh"/>
+                            <constraint firstItem="xhp-Oh-9GI" firstAttribute="top" secondItem="bTt-rX-uPL" secondAttribute="top" constant="50" id="6Gj-G5-7YG"/>
+                            <constraint firstItem="xhp-Oh-9GI" firstAttribute="leading" secondItem="bTt-rX-uPL" secondAttribute="leading" constant="8" id="wbc-he-nNU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Project" id="NOp-ZV-ZHI"/>
+                    <connections>
+                        <outlet property="endProjectDate" destination="xEe-Yk-1OE" id="xWg-4q-sum"/>
+                        <outlet property="errorProjectLabel" destination="BcT-ED-Xya" id="dVk-4e-Y5k"/>
+                        <outlet property="projectDescField" destination="amN-w4-cmE" id="hXv-EN-zjh"/>
+                        <outlet property="projectNameField" destination="NeB-ZF-Gav" id="xXm-TC-vZC"/>
+                        <outlet property="startProjectDate" destination="VbT-22-gya" id="Zu0-lV-SgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbJ-JJ-KFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="746"/>
+        </scene>
+        <!--Your Projects-->
+        <scene sceneID="cGT-zk-g2G">
+            <objects>
+                <viewController storyboardIdentifier="ProjectsVC" id="NCW-Et-ClY" customClass="ProjectViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sWG-MY-dCD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bAo-aY-z7n">
+                                <rect key="frame" x="8" y="205.00000000000003" width="377" height="352.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are your projects:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paz-yb-hSK">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0x-R2-wBw">
+                                        <rect key="frame" x="0.0" y="60" width="377" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCv-gh-EWX">
+                                        <rect key="frame" x="0.0" y="306" width="377" height="46.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Open project 📄">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a99-qS-L8E"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bAo-aY-z7n" firstAttribute="top" secondItem="a99-qS-L8E" secondAttribute="top" constant="50" id="Ybe-F1-LBi"/>
+                            <constraint firstItem="a99-qS-L8E" firstAttribute="trailing" secondItem="bAo-aY-z7n" secondAttribute="trailing" constant="8" id="cQM-Ic-RsR"/>
+                            <constraint firstItem="bAo-aY-z7n" firstAttribute="leading" secondItem="a99-qS-L8E" secondAttribute="leading" constant="8" id="sdL-Yf-Kfm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your Projects" id="ZUL-uT-GcB"/>
+                    <connections>
+                        <outlet property="openProjectButtonPressed" destination="NCv-gh-EWX" id="s8Q-Hy-Nnq"/>
+                        <outlet property="projectPickerView" destination="n0x-R2-wBw" id="klQ-Ur-gDm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9d-D3-Ogf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3653" y="4"/>
+        </scene>
+        <!--Project Detail View Controller-->
+        <scene sceneID="5nJ-V3-3yF">
+            <objects>
+                <viewController storyboardIdentifier="ProjectDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kb9-hb-WYG" customClass="ProjectDetailViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBM-iM-0qE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vqn-yc-Uwr">
+                                <rect key="frame" x="8" y="79" width="377" height="653.66666666666663"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gej-HP-ZUJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k4W-Zj-0rK">
+                                        <rect key="frame" x="0.0" y="60" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-ie-NmD">
+                                        <rect key="frame" x="0.0" y="120" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qFK-U7-uc2">
+                                        <rect key="frame" x="0.0" y="164" width="377" height="50"/>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO7-Qz-tly">
+                                        <rect key="frame" x="0.0" y="234" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zN2-Hw-BkT">
+                                        <rect key="frame" x="0.0" y="278" width="377" height="50"/>
+                                    </datePicker>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8B-99-gyH">
+                                        <rect key="frame" x="0.0" y="348" width="379" height="31"/>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICy-Fk-l5Y">
+                                        <rect key="frame" x="0.0" y="399" width="377" height="48.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="updateButtonTapped:" destination="kb9-hb-WYG" eventType="touchUpInside" id="Zku-gP-fG2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5y-3j-qVf">
+                                        <rect key="frame" x="0.0" y="467.66666666666663" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.14901960780000001" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="kb9-hb-WYG" eventType="touchUpInside" id="iX8-kI-KEl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB6-hL-h26">
+                                        <rect key="frame" x="0.0" y="536.33333333333337" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add a task">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addTaskButtonTapped:" destination="kb9-hb-WYG" eventType="touchUpInside" id="Axy-tr-ciT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG1-Ka-ATR">
+                                        <rect key="frame" x="0.0" y="605" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See tasks">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="seeTasksButtonTapped:" destination="kb9-hb-WYG" eventType="touchUpInside" id="AXF-v1-FBz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZT-gO-Lep"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqn-yc-Uwr" firstAttribute="leading" secondItem="cZT-gO-Lep" secondAttribute="leading" constant="8" id="JD0-8I-YJ3"/>
+                            <constraint firstItem="cZT-gO-Lep" firstAttribute="trailing" secondItem="vqn-yc-Uwr" secondAttribute="trailing" constant="8" id="j9T-1M-AOE"/>
+                            <constraint firstItem="vqn-yc-Uwr" firstAttribute="top" secondItem="cZT-gO-Lep" secondAttribute="top" constant="20" id="x3J-Nl-IzF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="k4W-Zj-0rK" id="BwI-pH-1mg"/>
+                        <outlet property="endDatePicker" destination="zN2-Hw-BkT" id="obc-6D-MBD"/>
+                        <outlet property="isCompletedSwitch" destination="P8B-99-gyH" id="jjX-ix-fS8"/>
+                        <outlet property="nameTextField" destination="Gej-HP-ZUJ" id="SVE-lg-RNA"/>
+                        <outlet property="seeTasksButton" destination="eG1-Ka-ATR" id="TqT-LK-ixg"/>
+                        <outlet property="startDatePicker" destination="qFK-U7-uc2" id="SHX-OJ-dki"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPw-dK-Cod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4459" y="4"/>
+        </scene>
+        <!--Tasks View Controller-->
+        <scene sceneID="4lD-26-pps">
+            <objects>
+                <viewController storyboardIdentifier="TasksViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Var-Ws-Y8v" customClass="TasksViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pGg-EW-PRV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Om-by-Umh">
+                                <rect key="frame" x="8" y="79" width="377" height="294.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These are the tasks." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0F-x9-bc6">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fZ-o7-mzN">
+                                        <rect key="frame" x="0.0" y="30" width="377" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5j-vc-Mav">
+                                        <rect key="frame" x="0.0" y="245.99999999999997" width="377" height="48.666666666666657"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Open task">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="openTaskButtonPressed:" destination="Var-Ws-Y8v" eventType="touchUpInside" id="L3J-k7-IR3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B29-pB-oH0"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Om-by-Umh" firstAttribute="top" secondItem="B29-pB-oH0" secondAttribute="top" constant="20" id="6oD-6j-bbq"/>
+                            <constraint firstItem="5Om-by-Umh" firstAttribute="leading" secondItem="B29-pB-oH0" secondAttribute="leading" constant="8" id="uk2-Yb-8zT"/>
+                            <constraint firstItem="B29-pB-oH0" firstAttribute="trailing" secondItem="5Om-by-Umh" secondAttribute="trailing" constant="8" id="xJ4-H7-b2q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ciw-JJ-iNF"/>
+                    <connections>
+                        <outlet property="taskPickerView" destination="4fZ-o7-mzN" id="gQ0-Jw-7Kj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPH-Ek-VBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5327" y="4"/>
+        </scene>
+        <!--Task Detail View Controller-->
+        <scene sceneID="W4L-W3-fLK">
+            <objects>
+                <viewController storyboardIdentifier="TaskDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A8A-t3-dzw" customClass="TaskDetailViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J4e-jZ-mSe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AXS-JF-zIK">
+                                <rect key="frame" x="8" y="79" width="377" height="657.33333333333337"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rjN-QC-Mcf">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oyM-e2-A2i">
+                                        <rect key="frame" x="0.0" y="60" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQy-tl-HZr">
+                                        <rect key="frame" x="0.0" y="120" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zyJ-Wp-jWv">
+                                        <rect key="frame" x="0.0" y="164" width="377" height="50"/>
+                                    </datePicker>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viC-QJ-jJC">
+                                        <rect key="frame" x="0.0" y="234" width="377" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-qO-HqQ">
+                                        <rect key="frame" x="0.0" y="470" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="updateButtonPressed:" destination="A8A-t3-dzw" eventType="touchUpInside" id="OeS-Nj-x71"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYN-MK-50Z">
+                                        <rect key="frame" x="0.0" y="538.66666666666663" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.14901960780000001" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButtonPressed:" destination="A8A-t3-dzw" eventType="touchUpInside" id="lvy-n0-fEU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5k-9N-clr">
+                                        <rect key="frame" x="0.0" y="607.33333333333337" width="377" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A68-sw-Kdl"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AXS-JF-zIK" firstAttribute="leading" secondItem="A68-sw-Kdl" secondAttribute="leading" constant="8" id="OSe-Sc-InJ"/>
+                            <constraint firstItem="AXS-JF-zIK" firstAttribute="top" secondItem="A68-sw-Kdl" secondAttribute="top" constant="20" id="jVP-Qv-VHE"/>
+                            <constraint firstItem="A68-sw-Kdl" firstAttribute="trailing" secondItem="AXS-JF-zIK" secondAttribute="trailing" constant="8" id="w7H-xs-4dV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dueDate" destination="zyJ-Wp-jWv" id="mmS-9d-UWh"/>
+                        <outlet property="errorTask" destination="Z5k-9N-clr" id="um2-vS-sXt"/>
+                        <outlet property="status" destination="viC-QJ-jJC" id="o4M-HO-A7F"/>
+                        <outlet property="taskDesc" destination="oyM-e2-A2i" id="zop-MS-UMx"/>
+                        <outlet property="taskName" destination="rjN-QC-Mcf" id="rN9-g0-PvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqy-b3-EgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6161" y="4"/>
+        </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="w0w-p9-4AN">
+            <objects>
+                <viewController storyboardIdentifier="AddTaskViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ipr-np-zJ1" customClass="AddTaskViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YWe-sp-wTF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-6J-QSd">
+                                <rect key="frame" x="8" y="79" width="377" height="588.66666666666663"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fuh-DZ-ugc">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-7W-vgd">
+                                        <rect key="frame" x="0.0" y="60" width="377" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRc-Sh-rUg">
+                                        <rect key="frame" x="0.0" y="120" width="377" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="d2F-pG-llm">
+                                        <rect key="frame" x="0.0" y="164" width="377" height="50"/>
+                                    </datePicker>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndx-Mm-TNU">
+                                        <rect key="frame" x="0.0" y="234" width="377" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sis-d8-U82">
+                                        <rect key="frame" x="0.0" y="470" width="377" height="48.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create task">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addTaskButtonPressed:" destination="Ipr-np-zJ1" eventType="touchUpInside" id="rze-7e-6lZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-Xb-Vfq">
+                                        <rect key="frame" x="0.0" y="538.66666666666663" width="377" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eNJ-eZ-OGE"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtr-6J-QSd" firstAttribute="top" secondItem="eNJ-eZ-OGE" secondAttribute="top" constant="20" id="3ey-zD-y87"/>
+                            <constraint firstItem="eNJ-eZ-OGE" firstAttribute="trailing" secondItem="vtr-6J-QSd" secondAttribute="trailing" constant="8" id="FmP-PB-Cq9"/>
+                            <constraint firstItem="vtr-6J-QSd" firstAttribute="leading" secondItem="eNJ-eZ-OGE" secondAttribute="leading" constant="8" id="nPS-fk-Ijj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="avX-Sg-XeM"/>
+                    <connections>
+                        <outlet property="errorTaskLabel" destination="ZCD-Xb-Vfq" id="VF2-kK-62J"/>
+                        <outlet property="statusPickerView" destination="ndx-Mm-TNU" id="IZ6-GV-7dh"/>
+                        <outlet property="taskDescTextField" destination="lvD-7W-vgd" id="EWi-IC-wJU"/>
+                        <outlet property="taskDueDateDatePicker" destination="d2F-pG-llm" id="Ugl-Oy-bKb"/>
+                        <outlet property="taskNameTextField" destination="Fuh-DZ-ugc" id="ghl-fw-3B1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iq-za-8zb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4459" y="746"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Win-bi-Rbf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kxu-VE-mE0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="9g8-ZP-vmz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.66666666666666663" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6LC-qr-AgO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHy-7G-a2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bli-no-fjY">
+            <objects>
+                <viewController id="aK3-jG-w1o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3xx-4e-02h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3R-kG-7aZ">
+                                <rect key="frame" x="8" y="79" width="377" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HAU-gY-REf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="#008F72">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9B-us-nrT">
+                                <rect key="frame" x="8" y="149" width="377" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ggw-mw-xfx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="#E6AA3E">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-Sm-YF0">
+                                <rect key="frame" x="8" y="219" width="377" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8v3-LF-gwa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="#87CEB7">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fR-iN-8aC">
+                                <rect key="frame" x="8" y="289" width="377" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AlC-uM-ARf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="#262224">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UIu-KB-f4a">
+                                <rect key="frame" x="0.0" y="366" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d8v-k3-ynW">
+                                <rect key="frame" x="8" y="389" width="377" height="119"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-di-SlA">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sle-Wo-FwN">
+                                        <rect key="frame" x="0.0" y="42.333333333333314" width="377" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3i-nw-mdx">
+                                        <rect key="frame" x="0.0" y="84.666666666666686" width="377" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jvI-eb-gEI"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="jvI-eb-gEI" firstAttribute="trailing" secondItem="mpR-Sm-YF0" secondAttribute="trailing" constant="8" id="2AM-b3-XPU"/>
+                            <constraint firstItem="mpR-Sm-YF0" firstAttribute="leading" secondItem="jvI-eb-gEI" secondAttribute="leading" constant="8" id="5km-oo-Qh6"/>
+                            <constraint firstItem="jvI-eb-gEI" firstAttribute="trailing" secondItem="d8v-k3-ynW" secondAttribute="trailing" constant="8" id="CNA-GX-bj4"/>
+                            <constraint firstItem="8fR-iN-8aC" firstAttribute="top" secondItem="mpR-Sm-YF0" secondAttribute="bottom" constant="20" id="HXW-yl-zm6"/>
+                            <constraint firstItem="x9B-us-nrT" firstAttribute="leading" secondItem="jvI-eb-gEI" secondAttribute="leading" constant="8" id="M9G-Ic-OBd"/>
+                            <constraint firstItem="8fR-iN-8aC" firstAttribute="leading" secondItem="jvI-eb-gEI" secondAttribute="leading" constant="8" id="Utn-c2-gup"/>
+                            <constraint firstItem="d8v-k3-ynW" firstAttribute="leading" secondItem="jvI-eb-gEI" secondAttribute="leading" constant="8" id="Va3-ia-hLe"/>
+                            <constraint firstItem="t3R-kG-7aZ" firstAttribute="top" secondItem="jvI-eb-gEI" secondAttribute="top" constant="20" id="Y5Q-P2-ayx"/>
+                            <constraint firstItem="x9B-us-nrT" firstAttribute="top" secondItem="t3R-kG-7aZ" secondAttribute="bottom" constant="20" id="eEY-wQ-tuI"/>
+                            <constraint firstItem="d8v-k3-ynW" firstAttribute="top" secondItem="8fR-iN-8aC" secondAttribute="bottom" constant="50" id="eRO-Co-P2M"/>
+                            <constraint firstItem="jvI-eb-gEI" firstAttribute="trailing" secondItem="x9B-us-nrT" secondAttribute="trailing" constant="8" id="irK-Ge-H4y"/>
+                            <constraint firstItem="t3R-kG-7aZ" firstAttribute="leading" secondItem="jvI-eb-gEI" secondAttribute="leading" constant="8" id="jWy-yJ-v2i"/>
+                            <constraint firstItem="jvI-eb-gEI" firstAttribute="trailing" secondItem="t3R-kG-7aZ" secondAttribute="trailing" constant="8" id="l1Z-ml-tzE"/>
+                            <constraint firstItem="mpR-Sm-YF0" firstAttribute="top" secondItem="x9B-us-nrT" secondAttribute="bottom" constant="20" id="rF7-iK-p6s"/>
+                            <constraint firstItem="jvI-eb-gEI" firstAttribute="trailing" secondItem="8fR-iN-8aC" secondAttribute="trailing" constant="8" id="zPc-rw-3qI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEj-04-gTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="747"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="bsa-MH-D28">
+            <objects>
+                <viewController id="Srv-Vc-wb1" customClass="Main_RegisterViewController" customModule="ManageProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNO-o2-saH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kSJ-Da-XDC">
+                                <rect key="frame" x="15" y="205.00000000000003" width="363" height="312.66666666666674"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vZ7-4t-916">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xA-Ip-bS0">
+                                        <rect key="frame" x="0.0" y="70" width="363" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzO-aV-iiL">
+                                        <rect key="frame" x="0.0" y="140" width="363" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter details to register." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qg-c7-SBi">
+                                        <rect key="frame" x="0.0" y="210" width="363" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTc-5w-nLq">
+                                        <rect key="frame" x="0.0" y="264" width="363" height="48.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.0" green="0.56078431370000004" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerButtonWith_sender:" destination="Srv-Vc-wb1" eventType="touchUpInside" id="rSj-iv-esf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ee8-7C-dnR"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ee8-7C-dnR" firstAttribute="trailing" secondItem="kSJ-Da-XDC" secondAttribute="trailing" constant="15" id="4wW-ZJ-BtN"/>
+                            <constraint firstItem="kSJ-Da-XDC" firstAttribute="leading" secondItem="Ee8-7C-dnR" secondAttribute="leading" constant="15" id="Bri-vz-TKH"/>
+                            <constraint firstItem="kSJ-Da-XDC" firstAttribute="top" secondItem="Ee8-7C-dnR" secondAttribute="top" constant="50" id="I63-9n-dcK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register" id="3aY-MB-JBd">
+                        <barButtonItem key="backBarButtonItem" title="Login" id="hwg-xc-FSB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="email" destination="vZ7-4t-916" id="1U4-cY-QNK"/>
+                        <outlet property="password" destination="gzO-aV-iiL" id="I9Z-dh-Xwy"/>
+                        <outlet property="registerNotification" destination="3qg-c7-SBi" id="9tw-R1-biM"/>
+                        <outlet property="username" destination="9xA-Ip-bS0" id="LSR-8d-jdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyN-Pn-kma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="746"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w0R-6L-y0f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nCB-cE-Qy6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bbR-Gj-c06">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.66666666669999997" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A2i-Ob-Wnw" kind="relationship" relationship="rootViewController" id="vz9-KS-yrC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGU-9q-dJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916.7938931297708" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
